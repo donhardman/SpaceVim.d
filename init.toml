@@ -1,0 +1,155 @@
+#=============================================================================
+# dark_powered.toml --- dark powered configuration example for SpaceVim
+# Copyright (c) 2016-2023 Wang Shidong & Contributors
+# Author: Wang Shidong < wsdjeg@outlook.com >
+# URL: https://spacevim.org
+# License: GPLv3
+#=============================================================================
+
+# All SpaceVim option below [option] section
+[options]
+  # if you want to use more colorscheme, please load the colorscheme
+  # layer
+  colorscheme = "obsidian"
+  colorscheme_bg = "dark"
+  # Disable guicolors in basic mode, many terminal do not support 24bit
+  # true colors
+  enable_guicolors = true
+  # Disable statusline separator, if you want to use other value, please
+  # install nerd fonts
+  statusline_separator = "arrow"
+  statusline_iseparator = "arrow"
+  buffer_index_type = 4
+  enable_tabline_filetype_icon = true
+  enable_statusline_mode = true
+  guifont = "FiraCode Nerd Font Mono:h14"
+  autocomplete_method = "coc"
+  default_indent = 2
+  bootstrap_before = "configure#before"
+  bootstrap_after = "configure#after"
+  windows_leader = "w"
+  filemanager = "defx"
+  project_rooter_patterns = ['.git/', '!node_packages/', '!vendor/', '!target/']
+  project_rooter_outermost = false
+  project_auto_root = false
+  project_non_root = 'current'
+
+[[layers]]
+    name = "core"
+    filetree_show_hidden = true
+    enable_smooth_scrolling = true
+
+[[layers]]
+  name ="tools"
+
+[[layers]]
+  name = 'edit'
+  autosave_timeout = 1000
+  autosave_all_buffers = true
+
+# Enable autocomplete layer
+[[layers]]
+  name = 'autocomplete'
+  auto_completion_return_key_behavior = "complete"
+  auto_completion_return_key_behavior = "nil"
+  auto_completion_tab_key_behavior = "smart"
+  auto_completion_delay = 100
+  auto_completion_enable_snippets_in_popup = false
+
+[[layers]]
+  name = "ui"
+  enable_sidebar = true
+  enable_cursorword = true
+  enable_scrollbar = true
+  enable_indentline = true
+  indentline_char = "▏"
+  concealcursor = "inc"
+  conceallevel = 2
+  cursorword_delay = 100
+
+[[layers]]
+  name = "shell"
+  default_position = "bottom"
+  default_height = 30
+  default_shell = "terminal"
+
+[[layers]]
+  name ="colorscheme"
+
+# [[layers]]
+  # name = "lang#typescript"
+
+[[layers]]
+  name = "lang#rust"
+
+[[layers]]
+  name = "lang#c"
+  enable_clang_syntax_highlight = true
+
+[[layers]]
+  name = "lang#php"
+
+[[layers]]
+  name = "lang#javascript"
+
+[[layers]]
+  name = "lang#go"
+
+[[layers]]
+  name = 'lang#python'
+
+#[[layers]]
+#  name = "lsp"
+#  filetypes = ["php", "rust"]
+#  [layers.override_cmd]
+#    php = ["intelephense", "--stdio"]
+#    rust = ["rls"]
+
+[[layers]]
+  name = "lang#markdown"
+
+[[layers]]
+  name = "checkers"
+  lint_on_the_fly = true
+  lint_on_save = true
+  show_cursor_error = true
+  open_error_list = 2
+
+[[layers]]
+  name = "fzf"
+
+[[layers]]
+  name = "git"
+[[layers]]
+  name = "github"
+
+[[layers]]
+  name = "tmux"
+
+[[custom_plugins]]
+  repo = "donhardman/vim-obsidian-theme"
+  merged = 0
+
+[[custom_plugins]]
+  repo = "junegunn/fzf.vim"
+  merged = 0
+
+[[custom_plugins]]
+  repo = "dinhhuy258/vim-local-history"
+  merged = 0
+
+# [[custom_plugins]]
+  # repo = "aserowy/tmux.nvim"
+  # merged = 0
+
+# [[custom_plugins]]
+  # repo = "yuki-yano/fzf-preview.vim"
+  # merged = 0
+[[custom_plugins]]
+  repo = "mistricky/codesnap.nvim"
+  merged = 0
+  build = "make"
+
+[[custom_plugins]]
+  repo = "ctrlpvim/ctrlp.vim"
+  merged = 0
