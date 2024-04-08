@@ -35,9 +35,9 @@
   project_non_root = 'current'
 
 [[layers]]
-    name = "core"
-    filetree_show_hidden = true
-    enable_smooth_scrolling = true
+  name = "core"
+  filetree_show_hidden = true
+  enable_smooth_scrolling = true
 
 [[layers]]
   name ="tools"
@@ -47,6 +47,11 @@
   autosave_timeout = 1000
   autosave_all_buffers = true
 
+[[layers]]
+  name = "format"
+  enable = true
+  format_method = "neoformat"
+
 # Enable autocomplete layer
 [[layers]]
   name = 'autocomplete'
@@ -55,6 +60,11 @@
   auto_completion_tab_key_behavior = "smart"
   auto_completion_delay = 100
   auto_completion_enable_snippets_in_popup = false
+
+[[layers]]
+  name = "gtags"
+  gtagslabel = "ctags"
+  auto_update = true
 
 [[layers]]
   name = "ui"
@@ -120,6 +130,10 @@
 
 [[layers]]
   name = "git"
+
+[[layers]]
+  name = "VersionControl"
+
 [[layers]]
   name = "github"
 
@@ -150,6 +164,22 @@
   merged = 0
   build = "make"
 
+# [[custom_plugins]]
+  # repo = "ctrlpvim/ctrlp.vim"
+  # merged = 0
+
 [[custom_plugins]]
-  repo = "ctrlpvim/ctrlp.vim"
+  name = "jiangmiao/auto-pairs"
+  merged = 0
+
+[[custom_plugins]]
+  name = "liuchengxu/vista.vim"
+  merged = 0
+
+[[custom_plugins]]
+  name = "kevinhwang91/nvim-ufo"
+  merged = 0
+
+[[custom_plugins]]
+  name = "kevinhwang91/promise-async"
   merged = 0
