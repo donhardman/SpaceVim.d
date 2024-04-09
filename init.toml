@@ -19,9 +19,43 @@
   # install nerd fonts
   statusline_separator = "arrow"
   statusline_iseparator = "arrow"
+  # left sections of statusline
+  statusline_left_sections = [
+    'winnr',
+    'major mode',
+    'filename',
+    'fileformat',
+    'minor mode lighters',
+    'version control info',
+    'search status'
+  ]
+  # right sections of statusline
+  statusline_right_sections = [
+    'cursorpos',
+    'percentage',
+    'input method',
+    'date',
+    'time'
+  ]
+
+  # 'winnr' window number
+  # 'syntax checking'
+  # 'filename' file name
+  # 'fileformat' file format
+  # 'major mode'
+  # 'minor mode lighters'
+  # 'cursorpos' cursor position
+  # 'percentage' content range
+  # 'date' date
+  # 'time' time
+  # 'whitespace' line number with trailing space at the end
+  # 'battery status' battery status
+  # 'input method' input method
+  # 'search status' search index
+
   buffer_index_type = 4
   enable_tabline_filetype_icon = true
-  enable_statusline_mode = true
+  enable_statusline_mode = false
   guifont = "FiraCode Nerd Font Mono:h14"
   autocomplete_method = "coc"
   default_indent = 2
