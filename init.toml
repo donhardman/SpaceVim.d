@@ -61,7 +61,7 @@
   default_indent = 2
   bootstrap_before = "configure#before"
   bootstrap_after = "configure#after"
-  windows_leader = "w"
+  windows_leader = "s"
   filemanager = "defx"
   project_rooter_patterns = ['.git/', '!node_packages/', '!vendor/', '!target/']
   project_rooter_outermost = false
@@ -142,6 +142,9 @@
 [[layers]]
   name = 'lang#python'
 
+[[layers]]
+  name = "lang#extra"
+
 #[[layers]]
 #  name = "lsp"
 #  filetypes = ["php", "rust"]
@@ -173,6 +176,9 @@
 
 [[layers]]
   name = "tmux"
+
+[[layers]]
+  name = "ctrlspace"
 
 [[custom_plugins]]
   repo = "donhardman/vim-obsidian-theme"
@@ -216,4 +222,8 @@
 
 [[custom_plugins]]
   name = "kevinhwang91/promise-async"
+  merged = 0
+
+[[custom_plugins]]
+  name = 'brenoprata10/nvim-highlight-colors'
   merged = 0
