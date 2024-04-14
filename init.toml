@@ -54,11 +54,12 @@
   # 'search status' search index
 
   buffer_index_type = 4
-  enable_tabline_filetype_icon = true
+  enable_tabline_filetype_icon = false
   enable_statusline_mode = false
   guifont = "FiraCode Nerd Font Mono:h14"
   autocomplete_method = "coc"
   default_indent = 2
+  expand_tab = false
   bootstrap_before = "configure#before"
   bootstrap_after = "configure#after"
   windows_leader = "s"
@@ -141,6 +142,7 @@
 
 [[layers]]
   name = 'lang#python'
+  python_interpreter = "python3"
 
 [[layers]]
   name = "lang#extra"
@@ -227,3 +229,11 @@
 [[custom_plugins]]
   name = 'brenoprata10/nvim-highlight-colors'
   merged = 0
+
+[[custom_plugins]]
+	name = 'nvim-lua/plenary.nvim'
+	merged = 0
+
+[[custom_plugins]]
+	name = 'nvim-pack/nvim-spectre'
+	merged = 0
